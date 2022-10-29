@@ -37,7 +37,7 @@ menu:
 # github地址, 头部导航右上角的github链接
 Github: 
   on: true
-  url: https://github.com/yuang01/hexo-theme-bamboo
+  url: https://github.com/ranyh524/ranyh524.github.io
 
 # 网站logo
 logo: /medias/logo.png # 为空则不显示
@@ -67,9 +67,9 @@ sidebar:
         - icon: fas fa-envelope
           url: mailto:me@xxx.com
         - icon: fab fa-github
-          url: https://github.com/yuang01/hexo-theme-bamboo
+          url: https://github.com/ranyh524/ranyh524.github.io
         - icon: fab fa-qq
-          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=你的qq号码
+          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2085374930
     # ---------------------------------------
     # category widget
     side_category:
@@ -377,15 +377,15 @@ skills:  # color or #000 技能
 # 关于我 社交账号
 socialAccounts: 
   on: true
-  # data: # data下面的值，不是固定个数的，可以自己增加或者删除
-  #   QQ:
-  #     icon: fas fa-qq
-  #     name: xxxxxxxx
-  #     url: 'http://www.baidu.com'
-  #   微信:
-  #     icon: fas fa-weixin
-  #     name: xxxxxxxx
-  #     url: 'http://www.baidu.com'
+  data: # data下面的值，不是固定个数的，可以自己增加或者删除
+    QQ:
+      icon: fas fa-qq
+      name: 2085374930
+      url: 'http://www.baidu.com'
+    微信:
+      icon: fas fa-weixin
+      name: 2085374930
+      url: 'http://www.baidu.com'
 
 # 关于我 游戏
 games:

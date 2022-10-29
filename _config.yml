@@ -5,10 +5,10 @@
 # Site
 title: 'ryh'
 subtitle: '我是sb'
-description: ''
+description: '只是fw罢'
 keywords:
-author: John Doe
-language: en
+author: ranyh
+language: zh-CN
 timezone: ''
 
 # URL
@@ -105,3 +105,27 @@ deploy:
   type: git
   repo: https://github.com/ranyh524/ranyh524.github.io.git
   branch: master
+  
+search:
+  path: search.xml
+  field: post
+  
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  
+pjax:
+  on: true
+  animation: circle # false, nprogress, circle
+  animationColor: 'orangered' # animation为 nprogress时候的动画颜色, red or #000 ...
+  cacheBust: false # url 地址追加时间戳，用以避免浏览器缓存
+  timeout: 5000    # The timeout in milliseconds for the XHR requests. Set to 0 to disable the timeout.
+  banUrl:          # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
+      # - '/xxx/'     
+      # - '/xxx/' 
