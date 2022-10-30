@@ -1,8 +1,4 @@
 ---
-​---
 title: categories
-date: 2020-09-14 15:30:30
-type: "categories"
-layout: "categories"
-​---
+date: 2022-10-30 20:22:29
 ---
