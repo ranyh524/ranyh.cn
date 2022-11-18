@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title></title>
+      <title>字节和位的关系，二者怎么换算</title>
       <link href="/2022/10/28/newpapername/"/>
       <url>/2022/10/28/newpapername/</url>
       
@@ -12,18 +12,32 @@
       
       
       
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+            <tag> 常识 </tag>
+            
+        </tags>
+      
     </entry>
     
     
     
     <entry>
-      <title></title>
+      <title>vim的常用命令</title>
       <link href="/2022/10/28/hello-world/"/>
       <url>/2022/10/28/hello-world/</url>
       
         <content type="html"><![CDATA[<p>@[toc]</p><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>vi的三种基本工作模式：<br>normal模式：正常模式<br>insert模式：插入模式<br>command模式：底部命令模式、末行模式</p></blockquote><h4 id="normal模式（正常模式）"><a href="#normal模式（正常模式）" class="headerlink" title="normal模式（正常模式）"></a>normal模式（正常模式）</h4><ol><li>进入vim编辑器时默认处在该模式下</li><li>在该模式下键盘输入的所有字符都被当作编辑命令来解释，命令合法才执行</li><li>在该模式下输入的命令不会被显示，只显示命令结果</li></ol><h4 id="insert模式（插入模式）"><a href="#insert模式（插入模式）" class="headerlink" title="insert模式（插入模式）"></a>insert模式（插入模式）</h4><ol><li>所有的输入都被当作文件显示在屏幕</li><li>从normal模式进入insert模式：i&#x2F;I(最常用)、a&#x2F;A(附加命令)、o&#x2F;O(打开命令)</li><li>从insert模式进入normal模式按Esc键</li></ol><h4 id="command模式（命令模式）"><a href="#command模式（命令模式）" class="headerlink" title="command模式（命令模式）"></a>command模式（命令模式）</h4><ol><li>从normal模式进入command模式输入<code>:</code></li><li>在该模式下vim窗口会在最后一行显示一个<code>:</code>并等待用户输入命令</li><li>command模式中所有命令都必须按<code>回车</code>后执行</li><li>命令执行完之后vim自动回到normal模式</li><li>可按Esc回到normal模式中<br><img src="https://img-blog.csdnimg.cn/3568b0e2de4f460e829269191ebd7bbd.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/3568b0e2de4f460e829269191ebd7bbd.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="工作过程流程图"></li></ol><h3 id="vim的启动"><a href="#vim的启动" class="headerlink" title="vim的启动"></a>vim的启动</h3><p>启动vim编辑器：vim&#x2F;vi<br><code>有这个文件时打开，没有就创建然后打开</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim newfile</span><br></pre></td></tr></table></figure><h3 id="退出vim"><a href="#退出vim" class="headerlink" title="退出vim"></a>退出vim</h3><p><strong>normal模式输入<code>:</code>进入命令输入模式</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:w 保存当前文件但不退出</span><br><span class="line">:q 系统退出vim</span><br><span class="line">:wq 保存并退出vim</span><br><span class="line">:q! 放弃所作修改直接退出</span><br><span class="line">:w newfile 另存为新文件，新文件名为newfile</span><br></pre></td></tr></table></figure><h3 id="显示和取消行号"><a href="#显示和取消行号" class="headerlink" title="显示和取消行号"></a>显示和取消行号</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:set nu 显示行号</span><br><span class="line">:set nonu  不显示行号</span><br></pre></td></tr></table></figure><h3 id="光标移动操作"><a href="#光标移动操作" class="headerlink" title="光标移动操作"></a>光标移动操作</h3><p><code>insert模式下光标的移动：四个方向键</code><br><code>normal模式下：各种命令</code></p><p><em><strong>在命令前输入数字n，则光标就移动n个位置</strong></em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">0 光标移动到所在行的开始</span><br><span class="line">$ 光标移动到所在行的末尾</span><br><span class="line">nG 光标移动到第几行（或：n回车）</span><br><span class="line">G 光标移动到最后一行</span><br><span class="line">gg 光标移动到第一行</span><br></pre></td></tr></table></figure><h3 id="撤销-恢复"><a href="#撤销-恢复" class="headerlink" title="撤销 恢复"></a>撤销 恢复</h3><p><code>normal模式中：输入u撤销</code><br><code>normal模式中：输入ctrl+r恢复 </code></p><h3 id="文本删除"><a href="#文本删除" class="headerlink" title="文本删除"></a>文本删除</h3><p><code>在insert模式中：使用delete/backspace可将其删除</code><br><code>在normal模式中：vim提供了许多命令</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dd 删除光标所在的整行</span><br><span class="line">ndd 删除从当前行开始的n行内容</span><br><span class="line">d0 删除当前光标前一个字符到行首的内容</span><br><span class="line">d$ 删除从光标所在处到行尾的内容</span><br></pre></td></tr></table></figure><h3 id="复制与粘贴"><a href="#复制与粘贴" class="headerlink" title="复制与粘贴"></a>复制与粘贴</h3><p><code>normal模式中输入</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">yy 复制当前行</span><br><span class="line">nyy 复制当前行开始的n行</span><br><span class="line">y0 复制到行首不含光标所在处字符</span><br><span class="line">y$ 复制到行尾含光标所在处字符</span><br><span class="line">y1G 复制到文件首，包含当前行</span><br><span class="line">yG 复制到文件尾，包含当前行</span><br><span class="line">p 粘贴至光标后，若整行复制则贴到当前行下面</span><br></pre></td></tr></table></figure><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p><code>normal模式下</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/rexp回车 向下搜索rexp</span><br><span class="line">？rexp回车 向上搜索rexp</span><br><span class="line">n 重复最近一次的搜索</span><br><span class="line">N 重复最近一次的修改但搜索方向相反</span><br></pre></td></tr></table></figure><p><strong>其中rexp是可以是正则表达式，也可以是单个字符串</strong></p><h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><p><code>normal模式下</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:s/old/new 用字符串new替换当前行内第一个字符串old</span><br><span class="line">:s/old/new/g 用字符串new替换当前行内所有字符串old</span><br><span class="line">:m,ns/old/new/g 用字符串new替换从m行到n行所有字符串old</span><br><span class="line">:%s/old/new/g 将全文所有的字符串old替换成new</span><br><span class="line">:%s/old/new/gc 进行替换时要求用户确认每个替换需要添加c选项</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
       
     </entry>
     
