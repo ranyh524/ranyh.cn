@@ -6,7 +6,7 @@
   <link href="https://ranyh524.github.io/atom.xml" rel="self"/>
   
   <link href="https://ranyh524.github.io/"/>
-  <updated>2022-11-18T01:40:12.532Z</updated>
+  <updated>2022-11-18T02:10:58.718Z</updated>
   <id>https://ranyh524.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最全动态规划详解</title>
+    <link href="https://ranyh524.github.io/2022/11/18/dp/"/>
+    <id>https://ranyh524.github.io/2022/11/18/dp/</id>
+    <published>2022-11-18T02:09:15.344Z</published>
+    <updated>2022-11-18T02:10:58.718Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="算法" scheme="https://ranyh524.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="c++" scheme="https://ranyh524.github.io/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>字节和位的关系，二者怎么换算</title>
