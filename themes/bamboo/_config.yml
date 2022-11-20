@@ -184,7 +184,7 @@ swiper:
   bubble: true # 轮播图是否显示气泡,也可以打开底下的花瓣或者雪花特效 sakura（花瓣）: true snow(雪花): true
   wave: true # 轮播图底下的波浪特效
   # 当没有文章设置swiper: true时候，轮播图会显示以下default默认内容，可自行切换对应内容
-  defaultImg: 'https://pic4.zhimg.com/80/v2-5317ee3782ed2cdc733a907b0065f895_1440w.jpg' # 图片，没有则随机选取
+  defaultImg: 'https://w.wallhaven.cc/full/y8/wallhaven-y8622k.jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
   defaultTile: '青墨书晚风' # 标题
@@ -349,9 +349,9 @@ music:
 # 关于我
 baseInfo:
   on: true
-  age: 99 # 年龄
+  age: 18 # 年龄
   sex: '男' # 性别
-  coordinate: '火星' # 坐标
+  coordinate: '四川' # 坐标
   status: '划水中' # 状态
 
 # 关于我 技能
@@ -419,7 +419,7 @@ copyright:
 motto:
   on: true
   title: '座右铭'
-  content: '沉淀后我愿意做个温暖的人，有自己的喜好，有自己的原则，有自己的信仰，不急功近利，不浮夸轻薄。宠辱不惊，淡定安逸，心静如水，不忘初心，方得始终。——凌茜'
+  content: '沉淀后我愿意做个温暖的人，有自己的喜好，有自己的原则，有自己的信仰，不急功近利，不浮夸轻薄。宠辱不惊，淡定安逸，心静如水，不忘初心，方得始终。'
   background: 'url("https://img10.360buyimg.com/ddimg/jfs/t1/166587/8/21344/72069/6088c24fEda5fdeb6/f9730ab637b7ca47.png")' # url("xxx") or red or #000 or rgba() ..
 
 # 首页公告
@@ -477,7 +477,7 @@ bubble:
 
 # valine 评论 https://valine.js.org
 valine:
-  on: false
+  on: true
   appid: 
   appkey: 
   avatar: '' # 匿名者头像选项 https://valine.js.org/avatar.html
@@ -649,7 +649,7 @@ color_scheme:
     # 首页文章列表的背景颜色, url("http://xxx.png") or red or #000 or rgba() ..
     postListBackground: 'rgba(255,255,255,1)'
     # 首页页面的底部背景颜色，空字符串透明('transparent')，可以是白色('#fff')等颜色, 也可以是图片，例如  'url("https://img11.360buyimg.com/ddimg/jfs/t1/169624/29/16/4603017/5fec2c79Eecbd536a/308b28b82a013cd2.png")'
-    bgFloor: 'url("https://pic1.zhimg.com/80/v2-b4b71405d08bc1952025ba1bd5db54f3_1440w.jpg?source=1940ef5c")' # 如果是图片地址，url里面请用双引号
+    bgFloor: 'url("https://w.wallhaven.cc/full/l3/wallhaven-l3xk6q.jpg")' # 如果是图片地址，url里面请用双引号
     # 头部导航是否背景透明，滚动条在对顶端的时候,头部导航背景透明
     headerMenuTransparent: true
     headerMenuBackgroundColor: '' 
@@ -797,7 +797,7 @@ highlight:
 
 # wordcount字数统计, 需要 npm i hexo-wordcount 安装
 wordcount:
-  on: false
+  on: true
 
 # 自己嵌入css或者script
 import:

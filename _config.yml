@@ -4,8 +4,8 @@
 
 # Site
 title: 'ryh'
-subtitle: '我是sb'
-description: '只是fw罢'
+subtitle: '救赎之道就在其中'
+description: '一个fw的自我救赎'
 keywords:
 author: ranyh
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://ranyh524.github.io/
+url: https://ranyh.tk
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
